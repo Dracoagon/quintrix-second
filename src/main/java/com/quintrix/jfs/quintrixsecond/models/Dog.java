@@ -1,7 +1,12 @@
 package com.quintrix.jfs.quintrixsecond.models;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document("Dogs")
 public class Dog {
 
+  @Id
   Integer id;
 
   String name;
